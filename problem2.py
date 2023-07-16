@@ -62,3 +62,46 @@ class LinkedList:
             output += str(value)
         output += "]"
         return output
+
+    def remove_node(self, nodes):
+        curr_node = self.head
+        index = 0
+        while index != nodes:
+            curr_node = curr_node.next
+            index = index + 1
+        curr_node.next = curr_node.next.next
+
+    def remove_duplicates(self):
+
+        if self.head == None:
+            return
+        else:
+            curr = self.head
+            nodes = 0
+            while curr.next != None:
+                    more_nodes = 0
+                    index = curr.next
+                    while index != None:
+                        if curr.data == index.data:
+                            self.remove_node(more_nodes+nodes-1)
+                            print(curr.data)
+                        index = index.next
+                        more_nodes = more_nodes + 1
+                    nodes = nodes + 1
+                    curr = curr.next
+
+
+ll = LinkedList()
+ll.insert_tail(1)
+ll.insert_head(2)
+ll.insert_head(2)
+ll.insert_head(2)
+ll.insert_head(3)
+ll.insert_head(4)
+ll.insert_head(5)
+ll.insert_tail(3)
+ll.insert_tail(0)
+ll.insert_tail(-1)
+print(ll) # linkedlist[5, 4, 3, 2, 2, 2, 1, 3, 0, -1]
+ll.remove_duplicates()
+print(ll) # linkedlist[5, 4, 3, 2, 1, 0, -1]
