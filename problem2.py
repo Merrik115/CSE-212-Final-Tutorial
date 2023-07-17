@@ -69,6 +69,7 @@ class LinkedList:
         while index != nodes:
             curr_node = curr_node.next
             index = index + 1
+        print(curr_node.next.data)
         curr_node.next = curr_node.next.next
 
     def remove_duplicates(self):
@@ -83,8 +84,8 @@ class LinkedList:
                     index = curr.next
                     while index != None:
                         if curr.data == index.data:
-                            self.remove_node(more_nodes+nodes-1)
-                            print(curr.data)
+                            self.remove_node(more_nodes+nodes)
+                            more_nodes = more_nodes - 1
                         index = index.next
                         more_nodes = more_nodes + 1
                     nodes = nodes + 1
