@@ -2,12 +2,6 @@
 
 A stack, as a data structure, is called "Last In, First Out", which, as the name suggests, is how things are added and removed. If you need to visualize it, you can think of a stack of plates. When you wash a plate you normally place it on top of the stack. Then, when you need to use a plate, you also take it from the top of the stack. The bottom plate is the last one used.
 
-## Why use a Stack?
-
-Stack data structures are most useful when the order is important. For example, a stack can be used to see if all the parentheses in a math problem are closed. A stack can also be used when you want a given sequence to return in reverse order.
-
-A Benefit to using a stack is that all of the standard stack operations run at O(1).
-
 ## How to use a Stack
 
 A stack has two main operations: `push` and `pop`. `push` adds the item to the top, also known as the back, of the stack. `pop` removes an item and returns it from the back of the stack.
@@ -41,6 +35,12 @@ print(len)
 ```
 
 The second printed value would be 1 as there would only be one item in the stack, `value`.
+
+## Why use a Stack?
+
+Stack data structures are most useful when the order is important. For example, a stack can be used to see if all the parentheses in a math problem are closed. A stack can also be used when you want a given sequence to return in reverse order.
+
+A Benefit to using a stack is that all of the standard stack operations run at O(1).
 
 ## Example problem solved with a Stack
 

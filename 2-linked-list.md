@@ -401,7 +401,7 @@ class LinkedList:
 ```
 This program is able to create a linked list. They already have a large amount of data stored as a linked list in their system, however, they normally add the data to the end of the linked list. They do not need any duplicates in their data. Your company wants you to be able to take the linked list that is already in the system and delete any duplicates. 
 
-You may need to write more than one function for this problem. You may not change any of the existing code, just add new functions to the class. You may need to use recursion.
+You may need to write more than one function for this problem. You may not change any of the existing code, just add new functions to the class.
 
 Some example code to test:
 ```Python
